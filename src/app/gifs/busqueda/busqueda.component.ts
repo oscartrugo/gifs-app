@@ -20,4 +20,9 @@ export class BusquedaComponent{
     this.gifsSerivce.buscarGifs(valor)
     this.txtBuscar.nativeElement.value = '';
   }
+
+  limpiarHistorial(){
+    localStorage.clear(); //Limpia el localStorage 
+    window.location.reload(); //recarga la página
+  }
 }
